@@ -144,4 +144,16 @@ document.addEventListener("DOMContentLoaded", () => {
             formContacto.reset();
         });
     }
+   
+    // --- AUTO-ESTIRAMIENTO DEL TEXTAREA ---
+    const textarea = document.querySelector("textarea");
+
+    if (textarea) {
+        textarea.addEventListener("input", function () {
+            this.style.height = "auto"; // Resetea el alto para que también se encoja al borrar
+            this.style.height = this.scrollHeight + "px"; // Ajusta al alto exacto del contenido
+        });
+    }
 });
+
+

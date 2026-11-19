@@ -149,6 +149,13 @@ textarea {
     border-radius: 7px;
 }
 
+textarea {
+  resize: none;       /* Saca las rayitas de la esquina */
+  overflow: hidden;   /* Evita que aparezca la scrollbar */
+  min-height: 40px;   /* Alto inicial que vos quieras */
+  box-sizing: border-box;
+}
+
 input:user-invalid,
 textarea:user-invalid {
     border-color: #b42318;

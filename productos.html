@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo de Comercial AGIRA: herramientas, pintura, fijaciones e instalaciones.">
+    <title>Productos | Comercial AGIRA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/webp" href="/img/logo.webp"></link>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">Comercial AGIRA</a>
+        <button id="menu" aria-label="Abrir menú">☰</button>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html" aria-current="page">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="galeria.html">Galería</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nuestros productos</h1>
+        <p>Elegí una categoría y abrí "Ver detalle" para conocer más.</p>
+        <p>
+            <button type="button" data-f="todos" class="activo">Todos</button>
+            <button type="button" data-f="herramientas">Herramientas</button>
+            <button type="button" data-f="pintura">Pintura</button>
+            <button type="button" data-f="fijaciones">Fijaciones</button>
+            <button type="button" data-f="instalaciones">Instalaciones</button>
+        </p>
+
+        <div class="grid">
+            <article class="card" data-c="herramientas">
+                <img src="/img/herramienta_manual.jpeg" alt="Herramientas manuales">
+                <h2>Herramientas manuales</h2>
+                <details>
+                    <summary>Ver detalle</summary>
+                    Martillos, destornilladores, pinzas y elementos de uso frecuente. Consultá marcas, modelos y disponibilidad en el local.
+                </details>
+            </article>
+
+            <article class="card" data-c="herramientas">
+                <img src="/img/herramienta_electrica.webp" alt="Herramientas eléctricas">
+                <h2>Herramientas eléctricas</h2>
+                <details>
+                    <summary>Ver detalle</summary>
+                    Equipos eléctricos para tareas de reparación y construcción. Consultá marcas, modelos y disponibilidad en el local.
+                </details>
+            </article>
+
+            <article class="card" data-c="pintura">
+                <img src="/img/pinturas.webp" alt="Pinturas y accesorios">
+                <h2>Pinturas y accesorios</h2>
+                <details>
+                    <summary>Ver detalle</summary>
+                    Productos para pintar, renovar y proteger superficies. Consultá marcas, modelos y disponibilidad en el local.
+                </details>
+            </article>
+
+            <article class="card" data-c="fijaciones">
+                <img src="/img/tornillos_fijaciones.jpg" alt="Tornillos y fijaciones">
+                <h2>Tornillos y fijaciones</h2>
+                <details>
+                    <summary>Ver detalle</summary>
+                    Artículos de fijación y sujeción para distintos trabajos. Consultá marcas, modelos y disponibilidad en el local.
+                </details>
+            </article>
+
+            <article class="card" data-c="instalaciones">
+                <img src="/img/plomeria y electricidad.jpeg" alt="Plomería y electricidad">
+                <h2>Plomería y electricidad</h2>
+                <details>
+                    <summary>Ver detalle</summary>
+                    Accesorios para instalaciones y mantenimiento. Consultá marcas, modelos y disponibilidad en el local.
+                </details>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>Comercial AGIRA · Perú 1576, Las Heras, Mendoza · 
+            <a href="https://www.instagram.com/comercial.agira/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100063583361833" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

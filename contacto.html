@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contactá a Comercial AGIRA: formulario de consulta, dirección y redes sociales.">
+    <title>Contacto | Comercial AGIRA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/webp" href="/img/logo.webp"></link>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"> Comercial AGIRA</a>
+        <button id="menu" aria-label="Abrir menú">☰</button>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html" aria-current="page">Contacto</a>
+            <a href="galeria.html">Galería</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <p>
+            Perú 1576, Las Heras, Mendoza. También en <a href="https://www.instagram.com/comercial.agira/" target="_blank" rel="noopener">Instagram</a> y <a href="https://www.facebook.com/profile.php?id=100063583361833" target="_blank" rel="noopener">Facebook</a>
+        </p>
+        
+        <form novalidate>
+            <label>
+                Nombre
+                <input required minlength="2" autocomplete="name">
+            </label>
+            <label>
+                Correo electrónico
+                <input type="email" required autocomplete="email">
+            </label>
+            <label>
+                Asunto
+                <input required minlength="3">
+            </label>
+            <label>
+                Mensaje
+                <textarea rows="5" required minlength="10"></textarea>
+            </label>
+            <button type="submit">Enviar consulta</button>
+            <p id="ok" role="status"></p>
+        </form>
+        <iframe title="Mapa de Comercial AGIRA" src="https://www.google.com/maps?q=Per%C3%BA+1576,+Las+Heras,+Mendoza&output=embed" loading="lazy"></iframe>
+    </main>
+
+    <footer>
+        <p>Comercial AGIRA · Perú 1576, Las Heras, Mendoza · 
+            <a href="https://www.instagram.com/comercial.agira/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100063583361833" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
